@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Order — Skinsaar | Skincare ka Naya Sansar</title>
+    <meta name="description" content="Track your luxury Skinsaar botanical skincare dispatch and express courier progress across India.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Compiled CSS -->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="bg-[#FAF6EF] text-[#1D1D1F] font-sans antialiased selection:bg-[#C9A455] selection:text-white flex flex-col min-h-screen">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-[#142C22] text-[#FAF5E9] text-xs font-medium py-2 px-4 text-center tracking-wide relative overflow-hidden">
+        <div class="flex items-center justify-center space-x-2">
+            <span class="inline-block w-2 h-2 rounded-full bg-[#C9A455] animate-pulse"></span>
+            <span>✨ Limited Edition Visionary Members Program is Live! | Free Shipping on orders above ₹699</span>
+            <a href="visionary.html" class="underline text-[#D8B76E] hover:text-white ml-2 font-semibold">Join Circle &rarr;</a>
+        </div>
+    </div>
+
+    <!-- Sticky Main Navigation Header -->
+    <header class="sticky top-0 z-40 bg-[#FAF6EF]/90 backdrop-blur-md border-b border-[#E4DCD0] transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-[1fr_auto_1fr] items-center h-20">
+                <div class="flex items-center justify-start">
+                    <button type="button" id="mobile-menu-btn" class="md:hidden text-[#1C3B2E] hover:text-[#C9A455] p-2 -ml-2 focus:outline-none focus:ring-2 focus:ring-[#C9A455]/40 rounded-lg transition-colors" aria-label="Open Navigation Menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                    <nav class="hidden md:flex items-center space-x-6">
+                        <a href="products.html" class="text-sm font-medium text-[#1C3B2E] hover:text-[#C9A455] transition-colors duration-200">Shop All</a>
+                        <a href="index.html" class="text-sm font-medium text-[#636366] hover:text-[#C9A455] transition-colors duration-200">Home</a>
+                        <a href="visionary.html" class="text-sm font-medium text-[#937126] hover:text-[#C9A455] transition-colors duration-200">Visionary Circle</a>
+                    </nav>
+                </div>
+
+                <div class="flex items-center justify-center text-center px-2">
+                    <a href="index.html" class="group block py-1">
+                        <span class="font-serif text-2xl sm:text-3xl md:text-4xl tracking-tight text-[#142C22] group-hover:text-[#C9A455] transition-colors duration-300 font-bold block leading-none">SKINSAAR</span>
+                        <span class="block text-[8.5px] sm:text-[10px] tracking-[0.22em] sm:tracking-[0.25em] text-[#937126] uppercase font-sans font-semibold mt-1 whitespace-nowrap">Skincare ka Naya Sansar</span>
+                    </a>
+                </div>
+
+                <div class="flex items-center justify-end space-x-3 sm:space-x-5 text-[#1C3B2E]">
+                    <a href="visionary.html" class="hidden lg:inline-flex items-center px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[#1C3B2E] text-[#D8B76E] border border-[#C9A455]/40 hover:bg-[#142C22] hover:border-[#C9A455] transition-all duration-200 shadow-sm whitespace-nowrap">
+                        <svg class="w-3.5 h-3.5 mr-1.5 text-[#C9A455]" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        Visionary Circle
+                    </a>
+
+                    <a href="track-order.html" class="text-[#C9A455] font-semibold transition-colors p-1 hidden sm:block text-xs" title="Track Order">
+                        Track Order
+                    </a>
+
+                    <button type="button" id="cart-drawer-btn" class="relative hover:text-[#C9A455] transition-colors p-1" aria-label="Open Cart Bag">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                        </svg>
+                        <span id="cart-badge-count" class="absolute -top-1.5 -right-1.5 bg-[#C9A455] text-white text-[11px] font-bold w-5 h-5 rounded-full flex items-center justify-center shadow-sm">
+                            1
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-[#FAF6EF] border-b border-[#E4DCD0] px-4 pt-3 pb-6 space-y-3">
+            <a href="products.html" class="block py-2 text-base font-medium text-[#1C3B2E] border-b border-[#EBE4D8]">Shop All Formulations</a>
+            <a href="index.html" class="block py-2 text-base font-medium text-[#1C3B2E] border-b border-[#EBE4D8]">Home</a>
+            <a href="visionary.html" class="block py-2 text-base font-medium text-[#1C3B2E] border-b border-[#EBE4D8]">Visionary Circle</a>
+            <a href="track-order.html" class="block py-2 text-base font-semibold text-[#C9A455]">Track Order</a>
+        </div>
+    </header>
+
+    <main class="flex-grow py-16">
+        <div class="max-w-xl mx-auto px-4 sm:px-6">
+            <div class="bg-white rounded-3xl border border-[#E4DCD0] p-8 sm:p-10 shadow-xl space-y-6">
+                
+                <div class="text-center space-y-2">
+                    <span class="text-2xl block">📦</span>
+                    <h1 class="font-serif text-3xl font-bold text-[#142C22]">Track Your Order</h1>
+                    <p class="text-xs text-[#636366]">Enter your 10-digit mobile number or order number (e.g. SKIN-2026-1001) to view live courier status.</p>
+                </div>
+
+                <form onsubmit="event.preventDefault(); document.getElementById('tracking-result').classList.remove('hidden');" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold text-[#142C22] mb-1">Order Number or Phone *</label>
+                        <input type="text" required value="SKIN-2026-1001" placeholder="e.g. SKIN-2026-1001 or 9876543210" class="w-full text-xs px-4 py-3 border border-[#D8CEBC] rounded-xl focus:ring-1 focus:ring-[#C9A455] outline-none">
+                    </div>
+                    <button type="submit" class="w-full py-3.5 rounded-full bg-[#1C3B2E] text-[#D8B76E] hover:bg-[#142C22] text-xs font-bold uppercase tracking-wider shadow-lg transition-all">
+                        Track Dispatch Status &rarr;
+                    </button>
+                </form>
+
+                <!-- Sample tracking output -->
+                <div id="tracking-result" class="hidden pt-6 border-t border-[#E4DCD0] space-y-4">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase font-bold text-[#937126] tracking-wider">Order #SKIN-2026-1001</span>
+                            <h3 class="font-serif font-bold text-base text-[#142C22]">In Transit — Out for Delivery</h3>
+                        </div>
+                        <span class="px-2.5 py-1 rounded-full text-[10px] font-bold bg-[#EEF9F4] text-[#1B663E] border border-[#C2E7CF]">
+                            ⚡ Express Air
+                        </span>
+                    </div>
+
+                    <div class="bg-[#FAF6EF] p-4 rounded-xl border border-[#E4DCD0] space-y-2 text-xs">
+                        <div class="flex justify-between">
+                            <span class="text-[#636366]">Courier Partner:</span>
+                            <span class="font-semibold text-[#142C22]">Bluedart Express</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-[#636366]">AWB Tracking:</span>
+                            <span class="font-mono font-semibold text-[#142C22]">BLUEDART-PN-772184</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-[#636366]">Destination:</span>
+                            <span class="font-semibold text-[#142C22]">Bengaluru, Karnataka (560102)</span>
+                        </div>
+                    </div>
+
+                    <!-- Progress timeline -->
+                    <div class="space-y-3 pt-2 text-xs">
+                        <div class="flex items-start space-x-3">
+                            <span class="w-2.5 h-2.5 rounded-full bg-[#1C3B2E] mt-1"></span>
+                            <div>
+                                <p class="font-bold text-[#142C22]">Dispatched from Fulfillment Hub</p>
+                                <p class="text-[10px] text-[#8E8E93]">Kanpur Central Hub • 09:30 AM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <span class="w-2.5 h-2.5 rounded-full bg-[#1C3B2E] mt-1"></span>
+                            <div>
+                                <p class="font-bold text-[#142C22]">Arrived at Destination Facility</p>
+                                <p class="text-[10px] text-[#8E8E93]">Bengaluru HSR Sorting Center • 06:15 AM</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <span class="w-2.5 h-2.5 rounded-full bg-[#C9A455] animate-pulse mt-1"></span>
+                            <div>
+                                <p class="font-bold text-[#C9A455]">Out for Delivery</p>
+                                <p class="text-[10px] text-[#8E8E93]">Estimated Delivery: Today before 7:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Slide-Over Shopping Bag Drawer -->
+    <div id="cart-drawer" class="fixed inset-0 z-50 overflow-hidden pointer-events-none transition-opacity duration-300 opacity-0">
+        <div id="cart-backdrop" class="absolute inset-0 bg-[#0D1A14]/60 backdrop-blur-sm transition-opacity"></div>
+        <div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+            <div id="cart-panel" class="w-screen max-w-md bg-[#FAF6EF] shadow-2xl flex flex-col pointer-events-auto transform translate-x-full transition-transform duration-300 ease-in-out border-l border-[#E4DCD0]">
+                <div class="p-5 border-b border-[#E4DCD0] flex items-center justify-between bg-white">
+                    <div class="flex items-center space-x-2">
+                        <h2 class="font-serif text-xl font-bold text-[#142C22]">Shopping Bag</h2>
+                        <span id="drawer-item-count" class="text-xs bg-[#FAF5E9] text-[#937126] font-semibold px-2 py-0.5 rounded-full border border-[#EEDEB2]">1 item</span>
+                    </div>
+                    <button type="button" id="cart-close-btn" class="text-[#8E8E93] hover:text-[#1C3B2E] p-1.5 rounded-lg focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="free-shipping-container" class="bg-[#FAF5E9] px-5 py-3 border-b border-[#EEDEB2] text-xs">
+                    <p id="free-shipping-text" class="text-[#73571A] font-medium mb-1.5">Add ₹699 for Free Delivery across India</p>
+                    <div class="w-full bg-[#EBE4D8] rounded-full h-1.5 overflow-hidden">
+                        <div id="free-shipping-bar" class="bg-[#C9A455] h-1.5 rounded-full transition-all duration-300" style="width: 100%"></div>
+                    </div>
+                </div>
+                <div id="drawer-items-list" class="flex-1 overflow-y-auto p-5 space-y-4"></div>
+                <div id="drawer-footer" class="p-5 border-t border-[#E4DCD0] bg-white space-y-4">
+                    <form id="drawer-coupon-form" class="flex space-x-2">
+                        <input type="text" id="drawer-coupon-code" placeholder="Promo code (e.g. WELCOME10)" class="flex-1 uppercase text-xs px-3 py-2 border border-[#D8CEBC] rounded-md focus:ring-1 focus:ring-[#C9A455] outline-none">
+                        <button type="submit" class="px-4 py-2 bg-[#FAF5E9] border border-[#C9A455] text-[#937126] text-xs font-semibold rounded-md hover:bg-[#C9A455] hover:text-white transition-colors">Apply</button>
+                    </form>
+                    <div id="drawer-coupon-applied" class="hidden text-xs text-[#3E7A62] bg-[#EEF9F4] p-2 rounded flex items-center justify-between">
+                        <span id="drawer-coupon-name">Coupon Applied</span>
+                        <button type="button" id="drawer-remove-coupon" class="text-red-500 hover:underline font-medium">Remove</button>
+                    </div>
+                    <div class="space-y-1.5 text-xs text-[#636366]">
+                        <div class="flex justify-between">
+                            <span>Subtotal</span>
+                            <span id="drawer-subtotal" class="font-medium text-[#1D1D1F]">₹699.00</span>
+                        </div>
+                        <div id="drawer-discount-row" class="flex justify-between text-[#3E7A62] hidden">
+                            <span>Discount</span>
+                            <span id="drawer-discount">-₹0.00</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Estimated Shipping</span>
+                            <span id="drawer-shipping" class="font-medium text-[#3E7A62]">FREE</span>
+                        </div>
+                        <div class="flex justify-between text-sm font-bold text-[#142C22] pt-2 border-t border-[#E4DCD0]">
+                            <span>Total</span>
+                            <span id="drawer-total">₹699.00</span>
+                        </div>
+                    </div>
+                    <button type="button" onclick="alert('Demo Mode: In production, this opens the secure Razorpay Checkout.')" class="w-full flex items-center justify-center px-6 py-3.5 rounded-full bg-[#1C3B2E] text-[#D8B76E] hover:bg-[#142C22] text-sm font-bold tracking-wide uppercase shadow-lg transition-all duration-200 group">
+                        <span>Proceed to Checkout</span>
+                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Luxury Brand Footer -->
+    <footer class="bg-[#142C22] text-[#FAF5E9] pt-16 pb-12 border-t border-[#244C3B] mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-[#244C3B]">
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="index.html" class="block">
+                        <span class="font-serif text-3xl font-bold tracking-tight text-[#FAF5E9]">SKINSAAR</span>
+                        <span class="block text-[11px] tracking-[0.2em] text-[#C9A455] uppercase font-semibold">Skincare ka Naya Sansar</span>
+                    </a>
+                    <p class="text-sm text-[#D8CEBC] leading-relaxed max-w-sm">
+                        Born at the intersection of time-honored Ayurvedic botanical intelligence and clinical dermatological science. Pure, potent, and meticulously crafted for Indian skin.
+                    </p>
+                    <div class="flex items-center space-x-4 text-xs text-[#C9A455]">
+                        <span class="flex items-center">🌿 100% Vegan</span>
+                        <span>•</span>
+                        <span>🐇 Cruelty-free</span>
+                        <span>•</span>
+                        <span>🧪 Toxin Free</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-serif text-base font-bold text-white mb-4">The Catalog</h3>
+                    <ul class="space-y-2.5 text-sm text-[#D8CEBC]">
+                        <li><a href="products.html" class="hover:text-[#C9A455] transition-colors">All Formulations</a></li>
+                        <li><a href="products.html" class="hover:text-[#C9A455] transition-colors">Golden Wash Facewash</a></li>
+                        <li><a href="product-detail.html" class="hover:text-[#C9A455] transition-colors">Glow Drops Vitamin C</a></li>
+                        <li><a href="products.html" class="hover:text-[#C9A455] transition-colors">Youth Repair Retinol</a></li>
+                        <li><a href="products.html" class="hover:text-[#C9A455] transition-colors">Sun Shield SPF 50</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-serif text-base font-bold text-white mb-4">Exclusive Circle</h3>
+                    <ul class="space-y-2.5 text-sm text-[#D8CEBC]">
+                        <li><a href="visionary.html" class="hover:text-[#C9A455] font-semibold text-[#D8B76E] transition-colors">Visionary Members (2000 Cap)</a></li>
+                        <li><a href="track-order.html" class="hover:text-[#C9A455] transition-colors">Track Your Order</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-serif text-base font-bold text-white mb-4">Concierge</h3>
+                    <p class="text-xs text-[#D8CEBC] mb-2">Direct founder & customer care:</p>
+                    <p class="text-sm font-semibold text-[#C9A455] mb-1">
+                        <a href="mailto:officialskinsaar@gmail.com" class="hover:underline">officialskinsaar@gmail.com</a>
+                    </p>
+                    <p class="text-sm text-white mb-3">
+                        <a href="tel:+916391213138" class="hover:underline">+91 6391213138</a>
+                    </p>
+                    <div class="flex items-center space-x-2 pt-1">
+                        <a href="https://instagram.com/skinsaar.official" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-semibold px-3 py-1.5 rounded-full bg-[#1C3B2E] text-[#D8B76E] border border-[#C9A455]/40 hover:bg-[#244C3B] hover:border-[#C9A455] transition-colors" title="Instagram">Instagram</a>
+                        <a href="https://facebook.com/skinsaar.official" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-semibold px-3 py-1.5 rounded-full bg-[#1C3B2E] text-[#D8B76E] border border-[#C9A455]/40 hover:bg-[#244C3B] hover:border-[#C9A455] transition-colors" title="Facebook">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-[#8E8E93] space-y-4 md:space-y-0">
+                <p>&copy; 2026 Skinsaar Inc. (www.skinsaar.com). All Rights Reserved.</p>
+                <div class="flex items-center space-x-6">
+                    <span class="text-[#D8CEBC]">Made with ❤️ for Indian Skin</span>
+                    <span>100% Genuine Formulations</span>
+                    <span>Razorpay Secured</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button (WhatsApp) -->
+    <a href="https://wa.me/916391213138" target="_blank" rel="noopener noreferrer" 
+       class="fixed bottom-20 sm:bottom-6 right-5 sm:right-6 z-40 w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-[#1C3B2E] text-[#D8B76E] hover:bg-[#142C22] hover:text-[#C9A455] border-2 border-[#C9A455]/60 hover:border-[#C9A455] shadow-xl hover:shadow-2xl flex items-center justify-center hover:scale-105 active:scale-95 transition-all duration-300 group focus:outline-none focus:ring-4 focus:ring-[#C9A455]/30" 
+       title="Chat with Concierge on WhatsApp" 
+       aria-label="Chat with Skinsaar Concierge on WhatsApp">
+        <svg class="w-6 h-6 sm:w-7 sm:h-7 fill-current drop-shadow-sm text-[#D8B76E] group-hover:text-[#C9A455] transition-colors" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.97.549 1.932.846 3.03.847 3.182 0 5.768-2.587 5.768-5.766.001-3.181-2.585-5.767-5.767-5.767zm7.39 5.765c-.002 4.075-3.318 7.391-7.391 7.391-1.29 0-2.502-.336-3.565-.929l-4.465 1.171 1.192-4.354c-.696-1.127-1.064-2.434-1.064-3.779 0-4.074 3.317-7.39 7.39-7.39 4.074 0 7.391 3.317 7.391 7.391zm-4.707 2.378c-.255-.128-1.508-.744-1.741-.829-.234-.085-.404-.128-.574.128-.171.256-.659.829-.808.999-.149.171-.298.192-.553.064s-1.077-.397-2.052-1.266c-.759-.677-1.272-1.513-1.421-1.769-.149-.256-.016-.394.112-.521.115-.115.255-.298.383-.447.128-.149.17-.255.255-.425.085-.171.043-.32-.021-.447s-.574-1.382-.787-1.893c-.208-.499-.419-.431-.574-.439l-.49-.009c-.17 0-.447.064-.681.319-.234.256-.893.872-.893 2.127s.915 2.467 1.042 2.637c.128.17 1.8 2.748 4.361 3.854.609.263 1.085.42 1.456.538.612.195 1.169.167 1.609.102.491-.073 1.508-.617 1.721-1.212.213-.596.213-1.106.149-1.213-.064-.106-.234-.17-.489-.298z"/>
+        </svg>
+    </a>
+
+    <!-- App Scripts -->
+    <script src="js/app.js"></script>
+</body>
+</html>
