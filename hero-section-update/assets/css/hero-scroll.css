@@ -1,0 +1,39 @@
+/**
+ * Skinsaar Hero Scroll Sequence Styles
+ * 
+ * Defines sticky viewport layout and scroll-container track height.
+ */
+
+#hero-scroll-container {
+    position: relative;
+    height: 350vh;
+    background-color: #FAF6EF;
+}
+
+@media (min-width: 640px) {
+    #hero-scroll-container {
+        height: 400vh;
+    }
+}
+
+.hero-sticky-frame {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAF6EF;
+}
+
+#hero-sequence-canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    display: block;
+}
